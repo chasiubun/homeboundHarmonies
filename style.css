@@ -1,0 +1,59 @@
+/* Colour Pallete:
+#E6F4F1 - lightest blue
+#434656 - darker purple (text)
+#A7AABC - grey
+#E0C48F - light brown
+#A78E5C - mocha */
+
+body{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: #434656;
+    display: grid;
+    grid-template-areas: 
+        "sidebar header" 
+        "sidebar body"
+        "sidebar footer"
+    ;
+    grid-template-rows: 20vh 70vh 10vh;
+    grid-template-columns: 30vw 70vw;
+}
+
+.sidebar{
+    grid-area: sidebar;
+}
+
+.header{
+    grid-area: header;
+    background-color: #E6F4F1;
+    display: grid;
+}
+
+.logo{    
+    display: grid;
+    grid-template-areas: "logoImage logoName";
+    grid-template-columns: 10vw 90vw;
+}
+
+.logoImage{grid-area: logoImage;}
+.logoName{grid-area: logoName;}
+
+
+.body{
+    grid-area: body;
+    background-color: #E0C48F;
+}
+
+.footer{
+    grid-area: footer;
+    background: #E6F4F1;
+}
+
+ul{
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style-type: none;
+    background-color: #A78E5C;
+}
+
