@@ -1,59 +1,65 @@
-/* Colour Pallete:
-#E6F4F1 - lightest blue
-#434656 - darker purple (text)
-#A7AABC - grey
-#E0C48F - light brown
-#A78E5C - mocha */
-
-body{
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    color: #434656;
-    display: grid;
-    grid-template-areas: 
-        "sidebar header" 
-        "sidebar body"
-        "sidebar footer"
-    ;
-    grid-template-rows: 20vh 70vh 10vh;
-    grid-template-columns: 30vw 70vw;
+body {
+  font-family: -apple-system,BlinkMacSystemFont,Lato,Roboto,Helvetica Neue,Arial,sans-serif;
+  color: #394b41;
+  display: grid;
+  grid-template-areas:
+    "header sidebar"
+    "body sidebar"
+    "footer sidebar";
+  grid-template-rows: 20vh 70vh 10vh;
+  grid-template-columns: 70vw 30vw;
 }
 
-.sidebar{
-    grid-area: sidebar;
+.sidebar {
+  grid-area: sidebar;
 }
 
-.header{
-    grid-area: header;
-    background-color: #E6F4F1;
-    display: grid;
+.header {
+  grid-area: header;
+  background-color: #9cb0a4;
+  display: grid;
 }
 
-.logo{    
-    display: grid;
-    grid-template-areas: "logoImage logoName";
-    grid-template-columns: 10vw 90vw;
+.headerButton {
+  grid-area: headerButton;
+}
+.headerImg {
+  grid-area: headerImg;
 }
 
-.logoImage{grid-area: logoImage;}
-.logoName{grid-area: logoName;}
-
-
-.body{
-    grid-area: body;
-    background-color: #E0C48F;
+.logo {
+  display: grid;
+  grid-template-areas: "logoImage logoName";
+  grid-template-columns: 10vw 90vw;
 }
 
-.footer{
-    grid-area: footer;
-    background: #E6F4F1;
+.body {
+  grid-area: body;
+  background-color: #49abdc;
 }
 
-ul{
-    margin: 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    list-style-type: none;
-    background-color: #A78E5C;
+.footer {
+  grid-area: footer;
+  background: #9cb0a4;
 }
 
+ul {
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  list-style-type: none;
+  background-color: rgb(255, 255, 255, 0.3);
+  display: flex;
+  align-items: center;
+}
+li {
+  width: 100%;
+  text-align: center;
+  width: auto;
+}
+
+#sidebarPic {
+  max-height: 100vh;
+  overflow: hidden;
+}
