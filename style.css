@@ -10,8 +10,7 @@ body {
     "header"
     "body"
     "footer";
-  grid-template-rows: 20vh auto 10vh;
-  /* grid-template-columns: 70vw 5vw; */
+  grid-template-rows: auto auto 10vh;
 }
 
 #picContain{
@@ -29,29 +28,17 @@ body {
   left: 5%;
 }
 
-/* .sidebar {
-  grid-area: sidebar;
-} */
-
-
 .header {
   grid-area: header;
   background-color: #9cb0a4;
   display: grid;
 }
 
-/* .headerButton {
-  grid-area: headerButton;
-}
-
-.headerImg {
-  grid-area: headerImg;
-} */
 
 .logo {
   display: grid;
   /* grid-template-areas: "logoImage logoName"; */
-  grid-template-columns: 10vw 90vw;
+  grid-template-columns: 20vw 80vw;
 }
 
 .body {
@@ -74,6 +61,7 @@ ul{
   align-items: center;
   overflow: auto;
   white-space: nowrap;
+  padding: 1em;
 }
 
 
@@ -107,5 +95,17 @@ a:active {
 }
 
 .SoF{
+  text-align: center;
+}
+
+.logoImage{
+  padding: 1%;
+}
+.logoName{
+  font-size: 3em;
+  align-self: center;
+}
+
+.footer{
   text-align: center;
 }
