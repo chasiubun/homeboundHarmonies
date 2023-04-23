@@ -51,7 +51,7 @@ body {
   background: #9cb0a4;
 }
 
-ul{
+.banner{
   margin: 0;
   display: flex;
   flex-direction: row;
@@ -65,7 +65,7 @@ ul{
 }
 
 
-li {
+.headerButton{
   max-width: 100%;
   text-align: center;
 }
