@@ -68,6 +68,7 @@ body {
 .headerButton{
   max-width: 100%;
   text-align: center;
+  /* border-right: 1rem solid rgb(156, 176, 164, 0); */
 }
 
 /* #sidebarPic {
